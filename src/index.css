@@ -1,0 +1,312 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  scroll-padding: 0px;
+  scroll-margin: 0px;
+  scroll-behavior: smooth;
+}
+
+.hero-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #14268c;
+  padding: 20px;
+}
+
+.member-btn {
+  background-color: transparent;
+  border: 1px solid #14268c;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  color: #14268c;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.member-btn:hover {
+  background-color: #345be0;
+  color: white;
+  border: 1px solid #345be0;
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #345be0;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-logo {
+  padding-left: 20px;
+  color: #14268c;
+  font-weight: bold;
+}
+
+.h-btn {
+  overflow: hidden;
+  display: flex;
+}
+
+.hamburger {
+  cursor: pointer;
+  position: relative;
+}
+
+.mobile-menu {
+  background-color: #e4e6eb;
+  position: fixed;
+  height: 100vh;
+  overflow-x: hidden;
+  padding: 20px;
+  transition: right 0.5s;
+  height: 100%;
+  width: 100%;
+  top: 79px;
+  z-index: 100;
+  left: -100%;
+  transition: left 0.2s ease-in-out;
+  left: -100%;
+  display: none;
+}
+
+.contact-card {
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact-pho {
+  width: 250px;
+  height: 250px;
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* .bar {
+height: 3px;
+width: 80%;
+margin: 6px auto;
+transition: all 0.3s ease;
+}
+.hamburger.open .bar:nth-child(1) {
+transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open .bar:nth-child(2) {
+opacity: 0;
+}
+.hamburger.open .bar:nth-child(3) {
+transform: rotate(-45deg) translate(5px, -5px);
+} */
+@media screen and (min-width: 768px) {
+  .h-btn {
+    display: none !important;
+  }
+  .navli,
+  .member-btn {
+    padding: 10px 20px;
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h-btn.open {
+    display: flex;
+  }
+
+  .logo {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    font-size: 25px;
+  }
+
+  .nav-content {
+    display: block;
+  }
+
+  .navli {
+    display: none;
+  }
+
+  .member-btn {
+    width: 100%;
+  }
+
+  .member-btn-div {
+    display: none;
+  }
+
+  .navlist {
+    padding: 15px;
+  }
+
+  .navli > a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-content-block {
+    padding: 20 px;
+    display: flex;
+  }
+  .nav-content-block.open {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 10;
+  }
+
+  .out-btn {
+    /* padding:; */
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mobile-menu.open {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    left: 0%;
+  }
+
+  .mobile-menu > a,
+  .mobile-menu > button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+  }
+
+  .mobile-menu > .member-btn {
+    justify-content: center;
+    background-color: #14268c;
+    color: white;
+    border: 1px solid #14268c;
+  }
+
+  .mobile-menu > .member-btn:hover {
+    background-color: #345be0;
+    color: white;
+    border: 1px solid #345be0;
+  }
+}
+
+/* Imgsliders */
+.swiper-navigation:hover {
+  background-color: black;
+}
+
+.desktop-card {
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+.mobile-card {
+  @media screen and (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.flash-sale-btn {
+  border: solid red 1px;
+  background-color: red;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.flash-sale-btn:hover {
+  background-color: white;
+  color: red;
+}
+
+/* set modal to center */
+.modal {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  /* transform: translateY(-10%); */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal.isActive {
+  top: 50%;
+  transition: all 0.3s ease-in-out;
+  /* transform: translateY(0%); */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  border: 1px solid red;
+  transition: all 0.1s ease-in-out;
+}
+
+.close-btn:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  transition: all 0.1s ease-in-out;
+}
+
+.join-btn {
+  width: 100%;
+  border: solid blue 1px;
+  background-color: blue;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+.join-btn:hover {
+  background-color: white;
+  color: blue;
+}
