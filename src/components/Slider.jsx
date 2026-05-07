@@ -8,25 +8,25 @@ import "swiper/css/pagination";
 const images = [
   {
     id: 1,
-    img: "../public/images/1.png",
+    img: "public/1.png",
     title: "Mountain View",
     description: "Explore beautiful mountain landscapes",
   },
   {
     id: 2,
-    img: "../public/images/2.png",
+    img: "public/2.png",
     title: "Beach Paradise",
     description: "Relax near the ocean",
   },
   {
     id: 3,
-    img: "../public/images/3.png",
+    img: "public/3.png",
     title: "City Lights",
     description: "Discover modern city life",
   },
   {
     id: 4,
-    img: "../public/images/bannerads.png",
+    img: "public/bannerads.png",
     title: "City Lights",
     description: "Discover modern city life",
   },
