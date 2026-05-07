@@ -1,8 +1,5 @@
 import { useState } from "react";
-import HomeIcon from "@mui/icons-material/Home";
-import { Button } from "@mui/material";
-import { useNavigate, useLocation } from "react-router-dom";
-import Popup from "./Popup";
+import Popup from "./Popup.jsx";
 
 export default function Navs() {
   const [Isopen, setOpen] = useState(false);

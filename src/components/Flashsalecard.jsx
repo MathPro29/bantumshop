@@ -13,7 +13,7 @@ import { Pagination } from "swiper/modules";
 const flashsalecarditems = [
   {
     id: 1,
-    img: "src/assets/images/sample.png",
+    img: ".../src/assets/images/sample.png",
     title: "Bantam",
     description: "เนื้อนุ่ม ฉ่ำ หวานละมุน",
     pricebefore: "฿900",
