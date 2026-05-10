@@ -13,7 +13,7 @@ import { Pagination } from "swiper/modules";
 const flashsalecarditems = [
   {
     id: 1,
-    img: "public/sample.png",
+    img: "/sample.png",
     title: "Bantam",
     description: "เนื้อนุ่ม ฉ่ำ หวานละมุน",
     pricebefore: "฿900",
@@ -21,7 +21,7 @@ const flashsalecarditems = [
   },
   {
     id: 2,
-    img: "public/sample.png",
+    img: "/sample.png",
     title: "Bantam Plus",
     description: "เนื้อหวาน ละลายในปาก",
     pricebefore: "฿900",
@@ -29,7 +29,7 @@ const flashsalecarditems = [
   },
   {
     id: 3,
-    img: "public/sample.png",
+    img: "/sample.png",
     title: "Bantum Pro",
     description: "เนื้อพรีเมี่ยม หวาน หอม",
     pricebefore: "฿900",
@@ -37,7 +37,7 @@ const flashsalecarditems = [
   },
   {
     id: 4,
-    img: "public/sample.png",
+    img: "/sample.png",
     title: "Bantum Max",
     description: "สุดยอดความฟิน หวานฉ่ำ ดีที่สุด",
     pricebefore: "฿900",
